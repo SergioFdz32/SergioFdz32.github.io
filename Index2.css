@@ -1,0 +1,157 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+header{
+width:100%
+}
+
+nav {
+    top: 100px;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin:20px auto;
+    widows: 90%;
+    max-width:1000px;
+}
+
+nav ul {
+    list-style:none;
+}
+nav > ul {
+    display:table;
+    width:100%;
+    background:rgb(197, 193, 193);
+    position:relative;
+}
+
+nav > ul li {
+    display:table-cell;
+}
+
+/*sub-menu*/
+nav > ul > li:hover > ul {
+    display:block;
+    height:100%;
+}
+nav > ul > li > ul {
+    display:block;
+    position:absolute;
+    background: rgb(133, 131, 130);
+    left:0;
+    right:0;
+    overflow:hidden;
+    height:0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > ul {
+    display:none;
+}
+
+nav > ul li a {
+    color:rgb(0, 0, 0);
+    display:block;
+    line-height:20px;
+    padding:20px;
+    position: relative;
+    text-align:center;
+    text-decoration:none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+h1 {
+    text-align: center;
+  }
+
+nav > ul > li > ul > li a:hover {
+    background:#5da5a2;
+}
+
+nav > ul > li > a span {
+    background: #174459;;
+    display:block;
+    height:100%;
+    width:100%;
+    left:0;
+    position:absolute;
+    top:-55px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+nav > ul > li > a span .icon{
+    display:block;
+    line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+    top:0px;
+}
+
+/*colores*/
+nav ul li a .primero {
+    background:#156579;
+}
+nav ul li a .segundo {
+    background:#5da5a2;
+}
+nav ul li a .tercero {
+    background:#f25724;
+}
+nav ul li a .cuarto {
+    background:#4284a3;
+}
+nav ul li a .quinto {
+    background:#607aec;
+}
+
+img {
+    height: 110px;
+    right: 15px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none inside;
+}
+ul.slider {
+    position:relative;
+}
+ul.slider li {
+    opacity: 0; 
+    transition: .5s;
+    position: absolute; 
+    left: 0px;
+    top: -705px;
+    margin:100px;
+    padding:200px;
+    border:2px solid rgb(0, 0, 0);
+    background:#fff;
+    width: 400px;
+    height: 10px;
+}
+ul.slider li:first-child {
+    opacity: 1; 
+}
+ul.slider li:target {
+    opacity: 1; 
+}
+nav {
+    position:relative;
+    top:70px;
+    left:50px;
+}
